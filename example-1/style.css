@@ -16,13 +16,12 @@ body{
 /* menu base styles */
 
 nav{
-    background: #333;
+ background: #333;
 }
 
 nav ul{
     list-style-type: none;
     padding: 0;
-
 }
 
 nav a{
@@ -34,24 +33,48 @@ nav a{
 }
 
 nav a:hover{
-    background: #fff;
-    color: #333;
-    text-decoration: underline;
+
+    background-color: #555
 }
 
+/* Social menu base styles*/
 
+a.tw{
+    background: url(im/tw.png) no-repeat center;
+    background-size: 80%;
+}
 
+a.fb{
+    background: url(im/tw.png) no-repeat center;
+    background-size: 80%;
+}
 
+.social a{
+    text-indent: -99999px;
+}
+
+.social{
+    max-width: 80px;
+}
 
 /* flex styles */
-@media screen and (min-width: 768px){
-    
+
+nav ul.social{
+    flex: 1 1 0
+}
+
+@media screen and (min-width: 400px){
+
     nav ul{
         display: flex;
-        justify-content: space-around;
-    }
-    nav li{
-        flex: 1 1 0
     }
 
+    nav li{
+        flex: 1 1 0;
+    }
+}
+    
+nav{
+    display: flex;
+    justify-content: space-between;
 }
