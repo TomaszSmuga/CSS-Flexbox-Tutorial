@@ -8,6 +8,14 @@
   <body>
     <div class="wrapper">
 
+      
+      <div style="margin: 20px;">
+        <span>Layout: </span>
+        <a href="#" class="stack">Stack</a>
+        <a href="#" class="grid">Grid</a>
+
+
+      </div>
       <nav>
         <ul>
           <li><a href="">Home</a></li>
@@ -49,6 +57,14 @@
       </section>
       
     </div>
-    
+    <script>
+      $("a.stack").on("click", function(){
+        $("article").addClass("stack");
+      })
+
+      $("a.stack").on("click", function(){
+        $("article").removeClass("stack");
+      })
+    </script>
   </body>
 </html>
