@@ -13,3 +13,27 @@ body{
     margin: 0 auto;
 }
 
+.flex-container{
+     display: flex;
+    background: white;
+
+}
+
+
+.box{
+    height: 100px;
+    min-width: 100px;
+    float: left;
+}
+
+.one{
+    background: blue;
+}
+
+.two{
+    background: red;
+}
+
+.three{
+    background: green;
+}
