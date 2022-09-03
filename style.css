@@ -14,15 +14,25 @@ body{
 
 }
 
-.flex-container{
-     display: flex;
-    background: white;
-    flex-wrap: wrap;
-    flex-flow: row;
-    align-items: center;
-    justify-content: center;
-    height: 800px;
+#blocks{
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
 }
+
+#blocks div{
+    flex: 0 0 100px;
+    padding: 40px 0;
+    text-align: center;
+    background: #ccc;
+}
+
+.one{order: 2;}
+.two{order: 3;}
+.three{order: 1;}
+.four{order: 5;}
+
+
 
 
 .box{
@@ -32,18 +42,28 @@ body{
 
 .one{
     background: blue;
+    text-align: center;
      
 
 }
 
 .two{
     background: red;
+    text-align: center;
+
     
 
 }
 
 .three{
     background: green;
-    
+    text-align: center;
+
+
+}
+
+.four{
+    background-color: aqua;
+    text-align: center;
 
 }
